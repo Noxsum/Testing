@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_restaurantes"
+    tools:context=".RestaurantActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardView_burger1"
+                android:layout_width="@dimen/cardview_width"
+                android:layout_height="@dimen/cardview_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="#991E1E1E"
+                app:cardCornerRadius="20dp"
+                android:onClick="openRestaurantBarna"
+                tools:ignore="OnClick">
+
+                <ImageView
+                    android:id="@+id/image_burger1"
+                    android:layout_width="150sp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:background="#D982181C"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/icono_maps" />
+
+                <TextView
+                    android:id="@+id/title_burger1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="167dp"
+                    android:layout_marginTop="-40dp"
+                    android:text="@string/burger_barna"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/info_burger1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="167dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/direccion_barna"
+                    android:textColor="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardView_burger2"
+                android:layout_width="@dimen/cardview_width"
+                android:layout_height="@dimen/cardview_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="#991E1E1E"
+                app:cardCornerRadius="20dp"
+                android:onClick="openRestaurantHospi"
+                tools:ignore="OnClick">
+
+                <ImageView
+                    android:id="@+id/image_maps"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:background="#D982181C"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/icono_maps" />
+
+                <TextView
+                    android:id="@+id/title_burger2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="167sp"
+                    android:layout_marginTop="-40dp"
+                    android:text="@string/burger_hospi"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/info_burger2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="167dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/direccion_hospi"
+                    android:textColor="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardView_burger3"
+                android:layout_width="@dimen/cardview_width"
+                android:layout_height="@dimen/cardview_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="#991E1E1E"
+                app:cardCornerRadius="20dp"
+                android:onClick="openRestaurantTarraco"
+                tools:ignore="OnClick">
+
+                <ImageView
+                    android:id="@+id/image_burger3"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:background="#D982181C"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/icono_maps" />
+
+                <TextView
+                    android:id="@+id/title_burger3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="167dp"
+                    android:layout_marginTop="-40dp"
+                    android:text="@string/burger_tarraco"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/info_burger3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="167sp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/direccion_tarraco"
+                    android:textColor="@color/white" />
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BurgerFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardView_burger1"
+                android:layout_width="@dimen/cardview_width"
+                android:layout_height="@dimen/cardview_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="#991E1E1E"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/image_burger1"
+                    android:layout_width="150sp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:background="#D982181C"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/brutar_bacon_crispy" />
+
+                <TextView
+                    android:id="@+id/title_burger1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="167dp"
+                    android:layout_marginTop="-40dp"
+                    android:text="@string/title_burger1_Products"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/info_burger1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="167dp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/info_burger1_Products"
+                    android:textColor="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardView_burger2"
+                android:layout_width="@dimen/cardview_width"
+                android:layout_height="@dimen/cardview_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="#991E1E1E"
+                android:onClick="addBurger2"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/image_burger2"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:background="#D982181C"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/chicken_wrap" />
+
+                <TextView
+                    android:id="@+id/title_burger2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="167sp"
+                    android:layout_marginTop="-40dp"
+                    android:text="@string/title_burger2_Products"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/info_burger2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="167dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/info_burger2_Products"
+                    android:textColor="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardView_burger3"
+                android:layout_width="@dimen/cardview_width"
+                android:layout_height="@dimen/cardview_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="#991E1E1E"
+                android:onClick="addBurger3"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/image_burger3"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:background="#D982181C"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/king_chicken" />
+
+                <TextView
+                    android:id="@+id/title_burger3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="167dp"
+                    android:layout_marginTop="-40dp"
+                    android:text="@string/title_burger3_Products"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/info_burger3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="167sp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/info_burger3_Products"
+                    android:textColor="@color/white" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardView_burger4"
+                android:layout_width="@dimen/cardview_width"
+                android:layout_height="@dimen/cardview_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:backgroundTint="#991E1E1E"
+                android:onClick="addBurger4"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/image_burger4"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:background="#D982181C"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/whopper" />
+
+                <TextView
+                    android:id="@+id/title_burger4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="167sp"
+                    android:layout_marginTop="-40dp"
+                    android:text="@string/title_burger4_Products"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/info_burger4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="167sp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/info_burger4_Products"
+                    android:textColor="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/GoToCartBurger"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="50dp"
+                android:text="@string/ir_carrito" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
